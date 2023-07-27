@@ -19,24 +19,25 @@ Isso criará uma cópia local de todos os arquivos da Sala Precisa em seu sistem
 ### Windows
 
 Para criar um arquivo JPG de 50 MB:
-`fsutil file createnew Fakefile_50mb.jpg 52428800`
+`fsutil file createnew "C:\caminho_do_arquivo\Fakefile_50mb.jpg" 52428800`
 
 
 Para criar um arquivo MP4 de 100 MB:
-`fsutil file createnew Fakefile_100mb.mp4 104857600`
+`fsutil file createnew "C:\caminho_do_arquivo\Fakefile_100mb.mp4" 104857600`
 
 
 ### Mac e Linux
 
 Para criar um arquivo WAV de 30 MB:
-`dd if=/dev/zero of=Fakefile_30mb.wav bs=31457280 count=1`
+`dd if=/dev/zero of="/caminho_do_arquivo/Fakefile_30mb.wav" bs=31457280 count=1`
 
 
 Para criar um arquivo PDF de 5 MB:
-`dd if=/dev/zero of=Fakefile_5mb.pdf bs=5242880 count=1`
+`dd if=/dev/zero of="/caminho_do_arquivo/Fakefile_5mb.pdf" bs=5242880 count=1`
 
+Certifique-se de substituir `/caminho_do_arquivo/` pelo caminho da pasta onde você deseja criar o arquivo em seu sistema. Isso garantirá que os arquivos sejam criados no local correto.
 
-Lembre-se de que esses comandos criarão arquivos vazios com os tamanhos especificados. O tamanho real do arquivo criado pode ser ligeiramente maior devido a metadados e informações de formatação.
+Lembre-se também de que esses comandos criarão arquivos vazios com os tamanhos especificados. O tamanho real do arquivo criado pode ser ligeiramente maior devido a metadados e informações de formatação.
 
 ### Conversão de MB para Bytes
 
