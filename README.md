@@ -56,8 +56,6 @@ Para criar um arquivo WAV de 30 MB:
 Para criar um arquivo PDF de 5 MB:
 `dd if=/dev/zero of="/caminho_do_arquivo/Fakefile_5mb.pdf" bs=5242880 count=1`
 
-Substitua `caminho_do_arquivo` pelo caminho e nome do arquivo que deseja criar (por exemplo, `~/pasta/arquivo.jpg`) e `tamanho_em_bytes` pelo tamanho do arquivo em bytes que você deseja criar.
-
 Lembre-se de que 1 MB (megabyte) equivale a 1.048.576 bytes. Aqui está uma pequena tabela de conversão como exemplo:
 
 ### Conversão de MB para Bytes
