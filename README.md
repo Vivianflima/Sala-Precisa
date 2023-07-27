@@ -29,6 +29,10 @@ Para criar um arquivo JPG de 50 MB:
 Para criar um arquivo MP4 de 100 MB:
 `fsutil file createnew "C:\caminho_do_arquivo\Fakefile_100mb.mp4" 104857600`
 
+Certifique-se de substituir `/caminho_do_arquivo/` pelo caminho da pasta onde você deseja criar o arquivo em seu sistema. Isso garantirá que os arquivos sejam criados no local correto.
+
+Lembre-se também de que esses comandos criarão arquivos vazios com os tamanhos especificados. O tamanho real do arquivo criado pode ser ligeiramente maior devido a metadados e informações de formatação.
+
 
 ### Mac e Linux
 
