@@ -22,9 +22,14 @@ Se você precisar criar arquivos de tamanhos específicos para seus testes, voc�
 
 Para criar um arquivo de tamanho específico no Windows, você pode usar o utilitário "fsutil" no Prompt de Comando. Abra o "Prompt de Comando" e use o seguinte comando:
 
+`fsutil file createnew caminho_do_arquivo tamanho_em_bytes`
+
+Substitua `caminho_do_arquivo` pelo caminho e nome do arquivo que deseja criar (por exemplo, `C:\pasta\arquivo.jpg`) e `tamanho_em_bytes` pelo tamanho do arquivo em bytes que você deseja criar.
+
+**Exemplos:**
+
 Para criar um arquivo JPG de 50 MB:
 `fsutil file createnew "C:\caminho_do_arquivo\Fakefile_50mb.jpg" 52428800`
-
 
 Para criar um arquivo MP4 de 100 MB:
 `fsutil file createnew "C:\caminho_do_arquivo\Fakefile_100mb.mp4" 104857600`
@@ -38,6 +43,12 @@ Lembre-se também de que esses comandos criarão arquivos vazios com os tamanhos
 
 No macOS e nas distribuições Linux, você pode usar o comando "dd" para criar arquivos de tamanhos específicos. Abra o Terminal e utilize o seguinte comando:
 
+`dd if=/dev/zero of=caminho_do_arquivo bs=tamanho_em_bytes count=1`
+
+Substitua `caminho_do_arquivo` pelo caminho e nome do arquivo que deseja criar (por exemplo, `~/pasta/arquivo.jpg`) e `tamanho_em_bytes` pelo tamanho do arquivo em bytes que você deseja criar.
+
+**Exemplos:**
+
 Para criar um arquivo WAV de 30 MB:
 `dd if=/dev/zero of="/caminho_do_arquivo/Fakefile_30mb.wav" bs=31457280 count=1`
 
@@ -45,9 +56,9 @@ Para criar um arquivo WAV de 30 MB:
 Para criar um arquivo PDF de 5 MB:
 `dd if=/dev/zero of="/caminho_do_arquivo/Fakefile_5mb.pdf" bs=5242880 count=1`
 
-Certifique-se de substituir `/caminho_do_arquivo/` pelo caminho da pasta onde você deseja criar o arquivo em seu sistema. Isso garantirá que os arquivos sejam criados no local correto.
+Substitua `caminho_do_arquivo` pelo caminho e nome do arquivo que deseja criar (por exemplo, `~/pasta/arquivo.jpg`) e `tamanho_em_bytes` pelo tamanho do arquivo em bytes que você deseja criar.
 
-Lembre-se também de que esses comandos criarão arquivos vazios com os tamanhos especificados. O tamanho real do arquivo criado pode ser ligeiramente maior devido a metadados e informações de formatação.
+Lembre-se de que 1 MB (megabyte) equivale a 1.048.576 bytes. Aqui está uma pequena tabela de conversão como exemplo:
 
 ### Conversão de MB para Bytes
 
