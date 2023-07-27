@@ -14,9 +14,13 @@ Bem-vindo(a) à "Sala Precisa"! Inspirado na misteriosa "Sala Precisa" de Hogwar
 
 Isso criará uma cópia local de todos os arquivos da Sala Precisa em seu sistema.
 
-4. Criando arquivos de tamanhos específicos através da linha de comando: Se você precisar criar arquivos de tamanhos específicos para seus testes, você pode usar os seguintes exemplos de comandos em diferentes sistemas operacionais:
+## Criando arquivos de tamanhos específicos através da linha de comando: 
+
+Se você precisar criar arquivos de tamanhos específicos para seus testes, você pode usar os seguintes exemplos de comandos em diferentes sistemas operacionais:
 
 ### Windows
+
+Para criar um arquivo de tamanho específico no Windows, você pode usar o utilitário "fsutil" no Prompt de Comando. Abra o "Prompt de Comando" e use o seguinte comando:
 
 Para criar um arquivo JPG de 50 MB:
 `fsutil file createnew "C:\caminho_do_arquivo\Fakefile_50mb.jpg" 52428800`
@@ -27,6 +31,8 @@ Para criar um arquivo MP4 de 100 MB:
 
 
 ### Mac e Linux
+
+No macOS e nas distribuições Linux, você pode usar o comando "dd" para criar arquivos de tamanhos específicos. Abra o Terminal e utilize o seguinte comando:
 
 Para criar um arquivo WAV de 30 MB:
 `dd if=/dev/zero of="/caminho_do_arquivo/Fakefile_30mb.wav" bs=31457280 count=1`
